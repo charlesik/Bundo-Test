@@ -5,15 +5,15 @@ import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 
 function Footer() {
     return (
-        <div className='px-[80px] py-10'>
+        <div className='p-3 lg:px-[80px] py-10'>
             <Logo/>
             <p>Simplifying Retail.</p>
-            <div className='mt-5 flex gap-[100px]'>
-                <div>
+            <div className='mt-5 flex gap-[100px] flex-wrap'>
+                <div className='order-2 lg:order-1'>
                     <Image src={"/footer-img.png"} alt='Footer Image' width={377} height={562}/>
                 </div>
-                <div className='flex flex-col justify-between pb-5'>
-                <div className='flex gap-10'>
+                <div className='flex flex-col justify-between pb-5 order-1 lg:order-2'>
+                <div className='flex gap-10 flex-wrap'>
                     <div>
                         <p className='font-bold'>Company</p>
                         <p className='font-[300] text-[14px] my-2'>About Us</p>
@@ -39,7 +39,7 @@ function Footer() {
                         <p className='font-[300] text-[14px] my-2'>Vendor Agreement</p>
                     </div>
                 </div>
-                <div className='flex gap-3'>
+                <div className='flex gap-3 flex-wrap my-3'>
                     <p className='font-[700] text-[18px]'>Keep up with us</p>
                     <div className='text-[#34A853] flex items-center gap-1'>
                         <Instagram size={"16px"} fill='#34A853' color='white'/>
