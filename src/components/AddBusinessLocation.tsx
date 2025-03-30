@@ -12,14 +12,6 @@ import SearchBox from "./SearchBox";
       address: '',
       businessProfilePicture: '',
     });
-    const testLocation = {
-        id: 'test-id',
-        lat: 37.7749,
-        long: -122.4194,
-        businessName: 'Test Business',
-        address: '123 Test Street',
-        businessProfilePicture: 'https://example.com/picture.png',
-      };
   
     const handlePlaceSelect = (locationData: { id: string; lat: number; long: number; address: string }) => {
       setFormData((prev) => ({
